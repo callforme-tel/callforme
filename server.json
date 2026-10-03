@@ -1,0 +1,11 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "tel.callforme/callforme",
+  "title": "CallForMe",
+  "description": "Let your agent call businesses for you: quotes, reservations, cancellations, waiting on hold.",
+  "version": "1.0.0",
+  "websiteUrl": "https://callforme.tel",
+  "remotes": [
+    { "type": "streamable-http", "url": "https://callforme.tel/mcp" }
+  ]
+}
