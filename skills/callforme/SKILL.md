@@ -49,7 +49,7 @@ When the user says "call a few mechanics near me", "ask every pharmacy near 7502
 
 ## Good calls
 
-- One call per business; for comparisons, place up to 5 calls in parallel, follow them together, then make a table.
+- One call per business; for comparisons, place up to 10 calls in parallel, follow them together, then make a table.
 - `goal` should say what "done" looks like ("Get a price for front pads and rotors on a 2019 RAV4, and the earliest slot this week").
 - Use `constraints` for limits ("Don't agree to anything over $200", "Decline retention offers").
 - Banks, carriers and insurers verify the account holder: use `transfer_to` (the user's phone) with a goal that says to connect them, so the assistant waits through the menu and hold and then patches the user in.
