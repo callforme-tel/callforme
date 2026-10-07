@@ -40,7 +40,7 @@ Five fictional businesses (a pizza place, three auto shops and a gym) can be cal
 
 ## Pricing
 
-$1 per answered call, including the first 5 minutes, then $0.25 a minute. No charge if nobody answers. Prepaid: the first real call shows a one-time link to add $10 through Stripe; auto-reload is on by default and adjustable. Details: https://callforme.tel/docs/pricing
+$1 per answered call, including the first 2 minutes, then $0.40 a minute. No charge if nobody answers. Prepaid: the first real call shows a one-time link to add $10 through Stripe; auto-reload is on by default and adjustable. Details: https://callforme.tel/docs/pricing
 
 ## Safety
 
