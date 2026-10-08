@@ -1,0 +1,15 @@
+{
+  "name": "callforme",
+  "displayName": "CallForMe",
+  "version": "1.0.2",
+  "description": "Let your agent phone businesses for you: quotes, reservations, appointments, cancellations, stock checks and waiting on hold. Returns the answers and a transcript.",
+  "author": {
+    "name": "Great Work LLC",
+    "email": "hello@greatwork.company",
+    "url": "https://callforme.tel"
+  },
+  "homepage": "https://callforme.tel",
+  "repository": "https://github.com/callforme-tel/callforme",
+  "license": "MIT",
+  "keywords": ["phone", "calls", "voice", "agent", "reservations", "appointments", "customer service"]
+}

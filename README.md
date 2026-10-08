@@ -26,6 +26,7 @@ Every call opens with "Hi, this is an AI assistant calling for [your name], on a
 |---|---|
 | Claude (claude.ai, desktop, mobile) | Settings → Connectors → Add custom connector → `https://callforme.tel/mcp` |
 | Claude Code | `claude mcp add --transport http callforme https://callforme.tel/mcp` |
+| Claude plugin (skill + connector) | This repository is a Claude plugin: `.claude-plugin/plugin.json` bundles the skill with the remote MCP server |
 | ChatGPT | Settings → Security and login → Developer mode on, then chatgpt.com/plugins → + → Create custom MCP server → Create MCP App → `https://callforme.tel/mcp`, OAuth |
 | Codex | `codex mcp add callforme --url https://callforme.tel/mcp` |
 | Gemini CLI | `gemini mcp add --transport http callforme https://callforme.tel/mcp` |
