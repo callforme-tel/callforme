@@ -1,0 +1,15 @@
+{
+  "name": "callforme",
+  "displayName": "CallForMe",
+  "version": "1.0.1",
+  "description": "Let your agent phone businesses for you: quotes, reservations, appointments, cancellations, stock checks and waiting on hold. Returns the answers and a transcript. $1 per answered call.",
+  "author": {
+    "name": "Great Work LLC",
+    "email": "hello@greatwork.company"
+  },
+  "homepage": "https://callforme.tel",
+  "repository": "https://github.com/callforme-tel/callforme",
+  "license": "MIT",
+  "keywords": ["phone", "calls", "voice", "mcp", "agent", "reservations", "customer service"],
+  "logo": "assets/icon-512.png"
+}
