@@ -1,6 +1,8 @@
 # CallForMe
 
-**Let your agent call businesses for you.** CallForMe is a remote MCP server that gives Claude, ChatGPT, Codex, Cursor, Gemini CLI or any MCP client a phone. Your agent says who to call and what to get done; a voice assistant places the call, gets through the phone menu, waits on hold, asks your agent mid-call when the business needs something, and returns structured answers plus a transcript.
+CallForMe is a remote MCP server that lets your AI agent phone US and Canadian businesses for you: quotes, reservations, appointments, cancellations, stock checks and waiting on hold. A voice assistant places the call, asks your agent mid-call when the business needs something, and returns the answers plus a transcript. $1 per answered call.
+
+**Works with:** Claude (claude.ai, Desktop, mobile), Claude Code, ChatGPT, Codex, Cursor, Gemini CLI, Windsurf, VS Code, Cline, Goose and any MCP client. Agents without MCP use the skill with the REST API.
 
 - Website: https://callforme.tel
 - MCP server: `https://callforme.tel/mcp` (OAuth that asks for nothing)
@@ -35,13 +37,39 @@ Every call opens with "Hi, this is an AI assistant calling for [your name], on a
 
 More: https://callforme.tel/agents
 
+## Install the skill in any agent
+
+[![skills.sh](https://img.shields.io/badge/skills.sh-callforme-111111?style=flat-square)](https://skills.sh/callforme-tel/callforme/callforme)
+
+```shell
+npx skills add callforme-tel/callforme        # this project (asks which agents)
+npx skills add callforme-tel/callforme -g     # user-level, every project
+```
+
+Where the skill lands (to install by hand, copy `skills/callforme/` there):
+
+| Agent | Project folder | User folder (`-g`) |
+|---|---|---|
+| Claude Code | `.claude/skills/callforme/` | `~/.claude/skills/callforme/` |
+| Codex | `.agents/skills/callforme/` | `~/.codex/skills/callforme/` |
+| Cursor | `.agents/skills/callforme/` | `~/.cursor/skills/callforme/` |
+| GitHub Copilot | `.agents/skills/callforme/` | `~/.copilot/skills/callforme/` |
+| Gemini CLI | `.agents/skills/callforme/` | `~/.gemini/skills/callforme/` |
+| OpenCode | `.agents/skills/callforme/` | `~/.config/opencode/skills/callforme/` |
+| Cline | `.agents/skills/callforme/` | `~/.agents/skills/callforme/` |
+| Windsurf | `.windsurf/skills/callforme/` | `~/.codeium/windsurf/skills/callforme/` |
+| Goose | `.goose/skills/callforme/` | `~/.config/goose/skills/callforme/` |
+| OpenClaw | `skills/callforme/` | `~/.openclaw/skills/callforme/` |
+
+The skill tells your agent when and how to use CallForMe; the MCP server does the work, so connect that too (see Install above).
+
 ## Try it free
 
 Five fictional businesses (a pizza place, three auto shops and a gym) can be called for free with no setup: https://callforme.tel/demo
 
 ## Pricing
 
-$1 per answered call, including the first 2 minutes, then $0.40 a minute. No charge if nobody answers. Prepaid: the first real call shows a one-time link to add $10 through Stripe; auto-reload is on by default and adjustable. Details: https://callforme.tel/docs/pricing
+$1 per answered call, including the first 2 minutes, then $0.40 a minute. No charge if nobody answers or the line is busy, and voicemail is free when the call goes straight to it. Prepaid: the first real call shows a one-time link to add $10 through Stripe; auto-reload is on by default and adjustable. Details: https://callforme.tel/docs/pricing
 
 ## Safety
 
@@ -57,3 +85,5 @@ hello@greatwork.company. CallForMe is made by Great Work LLC.
 ## License
 
 The skill and the files in this repository are MIT licensed. The CallForMe service itself is hosted and is not open source.
+
+<sub>Last updated: 2026-10-09</sub>
