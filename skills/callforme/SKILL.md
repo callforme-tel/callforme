@@ -1,6 +1,6 @@
 ---
 name: callforme
-description: Phone a business for the user (quotes, reservations, appointments, cancellations, stock checks, waiting on hold, bill negotiation), or call around to several businesses of a kind near a place. Use when the user asks you to call, ring, phone, or "check with" a business, or when the answer needs a phone call. Works through the CallForMe MCP tools if installed, otherwise the REST API with curl.
+description: 'Phone a business for the user, or call around to several businesses of a kind near a place. Use when the user says "call the restaurant and book a table", "make a reservation for 4 at 7", "book an appointment for me", "call around for quotes", "get brake quotes from 3 shops", "ask the store if it''s in stock", "check if the pharmacy has my prescription", "cancel my gym membership", "wait on hold for me", "sit on hold with the airline", "negotiate my bill down", "find out their hours", "ring them and ask", or when the answer needs a phone call. Works through the CallForMe MCP tools if installed, otherwise the REST API with curl. Not for emailing or texting a business, or calling a personal (non-business) number.'
 metadata:
   version: "2"
   homepage: https://callforme.tel
