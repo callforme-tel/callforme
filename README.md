@@ -20,7 +20,7 @@ CallForMe is a remote MCP server that lets your AI agent phone US and Canadian b
 - "Sit on hold with the airline and patch me in when a person answers."
 - "Call 10 pharmacies near me and ask who has my prescription in stock."
 
-Every call opens with "Hi, this is an AI assistant calling for [your name], on a recorded line." It switches to Spanish on its own and calls back in other languages when the business speaks one.
+Every call opens with "Hi, this is an assistant calling for [your name], on a recorded line." If anyone asks, it says it's an AI, and it never claims to be a person. It switches to Spanish on its own and calls back in other languages when the business speaks one.
 
 ## Install
 
