@@ -30,7 +30,7 @@ This file is complete only if its last line is `END SKILL v2`. If that line is m
 1. **MCP tools** (if you have tools named `place_call`, `get_call`, ...): use them. Best option; connect once at https://callforme.tel/mcp.
 2. **HTTP** (any agent that can run curl): base `https://callforme.tel/v1`, OpenAPI at https://callforme.tel/openapi.json. Send `Authorization: Bearer cfm_...` once you have a key; keep it in the env var `CALLFORME_KEY` or your memory.
 
-Try it free first: calls to the demo lines need no account and cost nothing. They are five fictional businesses: Maple Street Pizza +1 469 770 7412 (reservations, menu), three auto shops that quote brake jobs (Oak Street Auto +1 469 402 2653, Cedar Lane Tire & Brake +1 469 437 9838, Elm Avenue Garage +1 469 300 6608, which puts you on hold), and Ironwood Fitness +1 469 253 8241 (cancels a membership after one retention offer). List: https://callforme.tel/demo (`find_business` with query `demo` returns them too).
+Try it free first: calls to the demo lines need no account and cost nothing. They are five fictional businesses: Maple Street Pizza +1 469 770 7412 (reservations, menu), three auto shops that quote brake jobs (Oak Street Auto +1 469 402 2653, Cedar Lane Tire & Brake +1 469 437 9838, Elm Avenue Garage +1 469 300 6608, which puts you on hold), and Ironwood Fitness +1 469 253 8241 (cancels a membership after one retention offer). List: https://callforme.tel/demo (`find_business` with query `demo` returns them too). When the user wants to "test" CallForMe, use a demo line, never a real business: a test call to a real office is billed and takes their staff's time.
 
 ## The flow
 
