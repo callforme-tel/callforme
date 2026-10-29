@@ -70,7 +70,7 @@ When the user says "call a few mechanics near me", "ask every pharmacy near 7502
 - One call per business; for comparisons, place up to 10 calls in parallel, follow them together, then make a table.
 - `goal` should say what "done" looks like ("Get a price for front pads and rotors on a 2019 RAV4, and the earliest slot this week").
 - Use `constraints` for limits ("Don't agree to anything over $200", "Decline retention offers").
-- Banks, carriers and insurers verify the account holder: use `transfer_to` (the user's phone) with a goal that says to connect them, so the assistant waits through the menu and hold and then patches the user in.
+- Banks, carriers, insurers and airline loyalty programs verify the account holder, often with a one-time code texted to them mid-call: use `transfer_to` (the user's phone) with a goal that says to connect them, so the assistant waits through the menu and hold and then patches the user in to read the code. Never pass a code in `details` or `answer_question`: the assistant won't read it to the business.
 - `voicemail_message` only if you want a message left; otherwise it hangs up on voicemail (free if it got there in the first minute; after a longer phone menu or hold it bills like an answered call).
 - Never put full card numbers, CVVs, SSNs, or passwords in `details`. The assistant won't say them anyway.
 - Businesses only. No personal calls, no telemarketing, no emergency numbers.
