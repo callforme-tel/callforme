@@ -63,6 +63,7 @@ When the user says "call a few mechanics near me", "ask every pharmacy near 7502
 ## Timing and language
 
 - **Late at night.** `place_call` dials whenever the user asks. Between 10pm and 7am at the business (worked out from the area code) the result carries a warning that the place may be closed; unanswered calls are free. `call_around` batches wait for 7am at those places instead of dialing them overnight.
+- **Warnings.** `place_call` results can carry `warnings`: the place looks closed right now (with today's hours), it's late there, no `on_behalf_of`, the balance is low. Tell the user, and when a business looks closed, offer to call again when it opens instead of redialing now.
 - **Language.** Calls open in English, and the assistant switches to Spanish by itself if the business answers in Spanish. For other languages (Vietnamese, Korean, Mandarin, Cantonese, French, Portuguese, German, Italian, Russian, Arabic, Hindi, Japanese, Polish, Tagalog, Ukrainian), pass `language` up front, e.g. `"language": "Vietnamese"` for a Vietnamese nail salon. If a call fails because the business spoke another supported language, CallForMe doesn't charge for it and calls back once in that language on its own; `get_call` on the first call points at the new one.
 
 ## Good calls
