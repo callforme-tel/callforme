@@ -2,7 +2,7 @@
 
 CallForMe is a remote MCP server that lets your AI agent phone US and Canadian businesses for you: quotes, reservations, appointments, cancellations, stock checks and waiting on hold. A voice assistant places the call, asks your agent mid-call when the business needs something, and returns the answers plus a transcript. $1 per answered call.
 
-**Works with:** Claude (claude.ai, Desktop, mobile), Claude Code, ChatGPT, Codex, Cursor, Gemini CLI, Windsurf, VS Code, Cline, Goose and any MCP client. Agents without MCP use the skill with the REST API.
+**Works with:** Claude (claude.ai, Desktop, mobile), Claude Code, ChatGPT, Codex, Cursor, Gemini CLI, Grok, Windsurf, VS Code, Cline, Goose and any MCP client. Agents without MCP use the skill with the REST API.
 
 - Website: https://callforme.tel
 - MCP server: `https://callforme.tel/mcp` (OAuth that asks for nothing)
@@ -26,12 +26,13 @@ Every call opens with "Hi, this is an assistant calling for [your name], on a re
 
 | Agent | How |
 |---|---|
-| Claude (claude.ai, desktop, mobile) | Settings → Connectors → Add custom connector → `https://callforme.tel/mcp` |
+| Claude (claude.ai, desktop, mobile) | Customize → Connectors → Add custom connector → `https://callforme.tel/mcp` |
 | Claude Code | `claude mcp add --transport http callforme https://callforme.tel/mcp` |
 | Claude plugin (skill + connector) | This repository is a Claude plugin: `.claude-plugin/plugin.json` bundles the skill with the remote MCP server |
 | ChatGPT | Open [CallForMe in ChatGPT's app directory](https://chatgpt.com/plugins/plugin_asdk_app_6ac125e2cffc8191992a7a5f0f3f1c40) and click Add. (Developer mode with a custom MCP server pointing at `https://callforme.tel/mcp` also works.) |
 | Codex | `codex mcp add callforme --url https://callforme.tel/mcp` |
 | Gemini CLI | `gemini mcp add --transport http callforme https://callforme.tel/mcp` |
+| Grok | grok.com/connectors → New Connector → Custom → `https://callforme.tel/mcp` |
 | Cursor, Windsurf, VS Code, Cline, Goose, others | Add a remote MCP server with URL `https://callforme.tel/mcp` |
 | Agents with a shell but no MCP | Use the skill in `skills/callforme/` with the REST API |
 
