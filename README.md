@@ -74,8 +74,8 @@ $1 per answered call, including the first 2 minutes, then $0.40 a minute. No cha
 ## Safety
 
 - Calls only go to businesses in the US and Canada. Emergency and premium-rate numbers are blocked.
-- No calls between 10pm and 7am at the business, unless you say it's open (24-hour places).
-- Card numbers, security codes, one-time codes and passwords are never read to a business.
+- A single call goes out when you ask. Between 10pm and 7am at the business, the result warns that it may be closed; `call_around` batches wait for 7am.
+- Card numbers, security codes, one-time codes and passwords are never read to a business. When a business sends a one-time code to the account holder, pass `transfer_to` and the assistant connects you to read it yourself.
 - Businesses can opt out at https://callforme.tel/for-businesses or by asking on a call.
 
 ## Support
