@@ -29,7 +29,7 @@ Every call opens with "Hi, this is an assistant calling for [your name], on a re
 | Claude (claude.ai, desktop, mobile) | Customize → Connectors → Add custom connector → `https://callforme.tel/mcp` |
 | Claude Code | `claude mcp add --transport http callforme https://callforme.tel/mcp` |
 | Claude plugin (skill + connector) | This repository is a Claude plugin: `.claude-plugin/plugin.json` bundles the skill with the remote MCP server |
-| ChatGPT | Open [CallForMe in ChatGPT's app directory](https://chatgpt.com/plugins/plugin_asdk_app_6ac125e2cffc8191992a7a5f0f3f1c40) and click Add. (Developer mode with a custom MCP server pointing at `https://callforme.tel/mcp` also works.) |
+| ChatGPT | Open [CallForMe in ChatGPT's plugin directory](https://chatgpt.com/plugins/plugin_asdk_app_6ac125e2cffc8191992a7a5f0f3f1c40) and click Connect. (Or add it yourself: Plugins > + > Add custom MCP server, URL `https://callforme.tel/mcp`, OAuth.) |
 | Codex | `codex mcp add callforme --url https://callforme.tel/mcp` |
 | Gemini CLI | `gemini mcp add --transport http callforme https://callforme.tel/mcp` |
 | Grok | grok.com/connectors → New Connector → Custom → `https://callforme.tel/mcp` |
