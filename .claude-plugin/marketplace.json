@@ -1,0 +1,18 @@
+{
+  "name": "callforme",
+  "owner": {
+    "name": "Great Work LLC",
+    "email": "hello@greatwork.company",
+    "url": "https://callforme.tel"
+  },
+  "metadata": {
+    "description": "CallForMe for Claude Code: your agent phones businesses for you and returns the answers plus a transcript."
+  },
+  "plugins": [
+    {
+      "name": "callforme",
+      "source": "./",
+      "description": "Let your agent phone businesses for you: quotes, reservations, appointments, cancellations, stock checks and waiting on hold."
+    }
+  ]
+}

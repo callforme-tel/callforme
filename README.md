@@ -2,6 +2,8 @@
 
 CallForMe is a remote MCP server that lets your AI agent phone US and Canadian businesses for you: quotes, reservations, appointments, cancellations, stock checks and waiting on hold. A voice assistant places the call, asks your agent mid-call when the business needs something, and returns the answers plus a transcript. $1 per answered call.
 
+**Install in Claude Code:** `/plugin install callforme --marketplace callforme-tel/callforme` (Claude Code 2.1.275 or later; on older versions run `/plugin marketplace add callforme-tel/callforme` first, then `/plugin install callforme`).
+
 **Works with:** Claude (claude.ai, Desktop, mobile), Claude Code, ChatGPT, Codex, Cursor, Gemini CLI, Grok, Windsurf, VS Code, Cline, Goose and any MCP client. Agents without MCP use the skill with the REST API.
 
 - Website: https://callforme.tel
@@ -31,7 +33,7 @@ Every call opens with "Hi, this is an assistant calling for [your name], on a re
 |---|---|
 | Claude (claude.ai, desktop, mobile) | Customize → Connectors → Add custom connector → `https://callforme.tel/mcp` |
 | Claude Code | `claude mcp add --transport http callforme https://callforme.tel/mcp` |
-| Claude plugin (skill + connector) | This repository is a Claude plugin: `.claude-plugin/plugin.json` bundles the skill with the remote MCP server |
+| Claude Code plugin (skill + connector) | `/plugin install callforme --marketplace callforme-tel/callforme` (this repository is the plugin and its marketplace) |
 | ChatGPT | Open [CallForMe in ChatGPT's plugin directory](https://chatgpt.com/plugins/plugin_asdk_app_6ac125e2cffc8191992a7a5f0f3f1c40) and click Connect. (Or add it yourself: Plugins > + > Add custom MCP server, URL `https://callforme.tel/mcp`, OAuth.) |
 | Codex | `codex mcp add callforme --url https://callforme.tel/mcp` |
 | Gemini CLI | `gemini mcp add --transport http callforme https://callforme.tel/mcp` |
